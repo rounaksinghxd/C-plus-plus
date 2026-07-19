@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //this header file is used for (input/output streams)
 using namespace std; //we use this line of code because after this code we didn't have to use std in cout or cin.
 
 int main()
