@@ -36,7 +36,35 @@ Binary XOR, ^, Copies the bit to the result if it is present in either of the op
 Left Shift, <<, Shifts the value to the left by the number of bits specified by the right operand
 Right Shift, >>, Shifts the value to the right by the number of bits specified by the right operand
 One's Complement, ~, Changes binary digits 1 to 0 and 0 to 1
+*/
+#include <iostream>
+using namespace std;
 
+int main() {
+    int a = 6, b = 4;
+
+    // Binary AND operator
+    cout << "a & b is " << (a & b) << endl;
+
+    // Binary OR operator
+    cout << "a | b is " << (a | b) << endl;
+
+    // Binary XOR operator
+    cout << "a ^ b is " << (a ^ b) << endl;
+
+    // Left Shift operator
+    cout << "a << 1 is " << (a << 1) << endl;
+
+    // Right Shift operator
+    cout << "a >> 1 is " << (a >> 1) << endl;
+
+    // One’s Complement operator
+    cout << "~(a) is " << ~(a);
+
+    return 0;
+}
+
+/*
 // Assignment Operators: Assignment Operators
 Assignment operators are used to assign value to a variable. 
 We assign the value of right operand into left operand according to which assignment operator we use.  
@@ -46,7 +74,31 @@ Add and Assignment, +=, Adds the right operand to the left operand and assigns t
 Subtract and Assignment, -=, Subtracts the right operand from the left operand and assigns the result to the left operand
 Multiply and Assignment, *=, Multiplies the left operand by the right operand and assigns the result to the left operand
 Divide and Assignment, /=, Divides the left operand by the right operand and assigns the result to the left operand
+*/
+#include <iostream>
+using namespace std;
 
+int main() {
+    int a = 6, b = 4;
+
+    // Assignment Operator.
+    cout << "a = " << a << endl;
+  
+    //  Add and Assignment Operator.
+    cout << "a += b is " << (a += b) << endl;
+  
+    // Subtract and Assignment Operator.
+    cout << "a -= b is " << (a -= b) << endl;
+  
+    //  Multiply and Assignment Operator.
+    cout << "a *= b is " << (a *= b) << endl;
+  
+    //  Divide and Assignment Operator.
+    cout << "a /= b is " << (a /= b);
+
+    return 0;
+}
+/*
 // Tenary or Conditional Operators
 Conditional operator returns the value, based on the condition. This operator takes three operands, therefore it is known as a Ternary Operator.
 Syntax:
@@ -56,7 +108,21 @@ In the above statement:
 The ternary operator ? determines the answer on the basis of the evaluation of Expression1.
 If Expression1 is true, then Expression2 gets evaluated.
 If Expression1 is false, then Expression3 gets evaluated.
+*/
+#include <iostream>
+using namespace std;
 
+int main() {
+    int a = 3, b = 4;
+
+    // Conditional Operator
+    int result = (a < b) ? b : a;
+    cout << "The greatest number "
+          "is " << result;
+
+    return 0;
+}
+/*
 //Miscellaneous Operators
 Apart from these operators, there are a few operators that do not fit in any of the above categories. These are:
 sizeof Operator
