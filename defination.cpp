@@ -32,6 +32,7 @@ int main()
     float f = 3.14;
     double ntr = 7.631118418;
     int arr[5] = {1,2,3,4,5};
-    cout << a << ab << abc << f << ntr;
+    cout << a  << ab << abc << f << ntr;
     return 0;
 }
+// endl; is used to end a line in a paragraph or something else.
