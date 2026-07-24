@@ -12,7 +12,7 @@ int main()
     int y = 7;
     int sum = x+y; //Executes strictly after x and y are declared.
     cout << sum;
-}
+
 /*
 2) Selection Statements (Conditionals)
 These statements allow your code to make decisions and execute specific blocks depending on whether a condition is true or false.
@@ -43,3 +43,13 @@ switch statement: Tests a single variable against multiple constant values (case
 
 Ternary operator (? :): Acts as a compact, inline single-line replacement for basic if-else assignments.
 */
+// Example of if statements:
+int a;
+cout <<"Enter the value of a: ";
+cin >> a;
+if (a/2==0) {
+    cout<<"The input number is EVEN";
+  }  else {
+        cout<<"The input number is ODD";
+    }
+}
