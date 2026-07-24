@@ -25,8 +25,21 @@ if-else statement: Provides an alternative block of code to run if the condition
 
 else if ladder: Evaluates multiple sequential conditions until one evaluates to true.
 
+for: Executes a block of code a specified number of times, typically iterating over a range of values.
+
+while: Executes a block of code as long as a specified condition is true.
+
+do-while: Executes a block of code once and then repeats the execution as long as a specified condition is true.
+
+break: Terminates the loop or switch statement and transfers control to the statement immediately following the loop or switch.
+
+continue: Skips the current iteration of a loop and continues with the next iteration.
+
+return: Exits a function and returns a value to the caller.
+
+goto: Transfers control to a labeled statement within the same function. (Note: goto is generally discouraged due to its potential for creating unreadable and error-prone code.)
+
 switch statement: Tests a single variable against multiple constant values (case), replacing long if-else ladders for multi-way branching.
 
 Ternary operator (? :): Acts as a compact, inline single-line replacement for basic if-else assignments.
-
 */
