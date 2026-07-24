@@ -52,4 +52,22 @@ if (a/2==0) {
   }  else {
         cout<<"The input number is: ODD" <<endl;
     }
+
+//Example of else if statement:
+
+int b;
+cout <<"Enter your marks in C++:" <<endl;
+cin >>b;
+if (b>=90) {
+    cout<<"Grade A";
+    }
+    else if (b>=70) {
+        cout<<"Grade B";
+    }
+    else if (b>=40) {
+        cout<<"Grade C";
+    }
+    else {
+        cout<<"Fail Try Next Time";
+    }
 }
