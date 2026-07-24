@@ -59,15 +59,19 @@ int b;
 cout <<"Enter your marks in C++:" <<endl;
 cin >>b;
 if (b>=90) {
-    cout<<"Grade A";
+    cout<<"Grade A" <<endl;
     }
     else if (b>=70) {
-        cout<<"Grade B";
+        cout<<"Grade B" <<endl;
     }
     else if (b>=40) {
-        cout<<"Grade C";
+        cout<<"Grade C" <<endl;
     }
     else {
-        cout<<"Fail Try Next Time";
+        cout<<"Fail Try Next Time" <<endl;
     }
+
+// Example of Switch Statement:
+//
 }
+
