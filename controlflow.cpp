@@ -74,8 +74,16 @@ if (b>=90) {
 // Example of Switch Statement:
     int day = 4; // The variable to evaluate
 
-    switch (day) {
-        case 1:
+    switch (day) { 
+        /* The expression inside the parentheses is evaluated once and compared against each case value. 
+    It must result in an integer, char, or enumeration type (floating-point numbers like float or double are not allowed).
+    
+        Each case represents a specific value to look for. 
+        If it matches the expression, the code below it runs. Duplicate values are prohibited.
+    
+    */
+        case 1: 
+        
             cout << "Monday";
             break;
         case 2:
@@ -99,6 +107,10 @@ if (b>=90) {
         default:
             cout << "Invalid day number!"; // Executes if no cases match
             break;
+            /*
+            default: An optional block that runs only if none of the explicit case values match the expression. 
+            It acts exactly like the final else in an if-else chain.
+            */
     }
 
     return 0;
