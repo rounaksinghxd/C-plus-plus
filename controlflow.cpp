@@ -72,8 +72,9 @@ if (b>=90) {
     }
 
 // Example of Switch Statement:
-    int day = 4; // The variable to evaluate
-
+    int day; // The variable to evaluate
+    cout <<"Enter the number of Day";
+    cin>> day;
     switch (day) { 
         /* The expression inside the parentheses is evaluated once and compared against each case value. 
     It must result in an integer, char, or enumeration type (floating-point numbers like float or double are not allowed).
