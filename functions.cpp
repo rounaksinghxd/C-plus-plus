@@ -26,7 +26,7 @@ int greets() {
 }
 int main() {
     int value = greets();
-    cout<<"Value is: "<<value <<endl ;
+    cout<<"Value is: "<<value <<endl;
     return 0;
 }
 
