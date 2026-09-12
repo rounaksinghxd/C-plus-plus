@@ -3,10 +3,11 @@
 First one is by Defining function completely above main() as we used already in previous questions in function.
 and, Second one is by Declare a prototype above main then define it below.
 */
-// Find sum of 1 to N
 #include <iostream>
 using namespace std;
 /* 
+// Find sum of 1 to N
+
 int sumN(int n); // Function declaration prototype
 
 int main() {
@@ -23,7 +24,8 @@ int sumN(int n) {
         a+=i;
     }
     return a;
-} */
+} 
+// Find factorial of n number:
 int factorial(int n);
 
 int main() {
@@ -39,6 +41,25 @@ int factorial(int n){
         fact *= i;
     }
     return fact;
+}
+*/
 
-   
+// Find the sum of digits:
+int sumN(int n);
+
+int main() {
+    int value = sumN(2356);
+    cout<<"The addition of the digits are:"<<value<<endl;
+    return 0;
+    
+}
+
+int sumN(int n){
+    int sum = 0;
+    while (n>0) {
+       int lastDig = n%10;
+       n /= 10;
+       sum += lastDig;
+    }
+    return sum;
 }
