@@ -42,7 +42,7 @@ int factorial(int n){
     }
     return fact;
 }
-*/
+
 
 // Find the sum of digits:
 int sumN(int n);
@@ -62,4 +62,29 @@ int sumN(int n){
        sum += lastDig;
     }
     return sum;
+}
+*/
+// Find the binomial expression nCr:
+int factorial(int num) {
+    int fact = 1;
+    for (int i = 1; i <= num; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+// Function to calculate nCr using the factorial helper
+int nCr(int n, int r) {
+    int numerator = factorial(n);
+    int denominator = factorial(r);
+    int denominator2 = factorial(n - r);
+    
+    return numerator / (denominator * denominator2);
+}
+
+int main() {
+    // Calculating 8C6
+    int value = nCr(8, 6);
+    cout << "The binomial expression value is: " << value << endl;
+    return 0;
 }
