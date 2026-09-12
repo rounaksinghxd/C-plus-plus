@@ -6,7 +6,7 @@ and, Second one is by Declare a prototype above main then define it below.
 // Find sum of 1 to N
 #include <iostream>
 using namespace std;
- 
+/* 
 int sumN(int n); // Function declaration prototype
 
 int main() {
@@ -23,4 +23,22 @@ int sumN(int n) {
         a+=i;
     }
     return a;
+} */
+int factorial(int n);
+
+int main() {
+    int value = factorial(5);
+    cout<<"Factorial of N is:"<<value<<endl;
+    return 0;
+}
+
+int factorial(int n){
+    int fact = 1;
+    int i;
+    for (i=1; i<=n; ++i) {
+        fact *= i;
+    }
+    return fact;
+
+   
 }
