@@ -63,7 +63,7 @@ int sumN(int n){
     }
     return sum;
 }
-*/
+
 // Find the binomial expression nCr:
 int factorial(int num) {
     int fact = 1;
@@ -88,3 +88,40 @@ int main() {
     cout << "The binomial expression value is: " << value << endl;
     return 0;
 }
+    */
+
+
+// Check whether the entered number is prime or not:
+// Function returns 1 if prime, and 0 if not prime
+int isPrime(int n) {
+    // Numbers less than or equal to 1 are not prime
+    if (n <= 1) {
+        return 0; // 0 represents false
+    }
+
+    // Check factors up to the square root of n
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            return 0; // Factor found, return 0 (false)
+        }
+    }
+
+    return 1; // No factors found, return 1 (true)
+}
+
+int main() {
+    int num;
+    
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    // The if-statement treats 1 as true and 0 as false
+    if (isPrime(num) == 1) {
+        cout << num << " is a prime number." << endl;
+    } else {
+        cout << num << " is not a prime number." << endl;
+    }
+
+    return 0;
+}
+
